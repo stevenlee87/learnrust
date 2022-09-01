@@ -13,3 +13,11 @@ fn main() {
 
     println!("New article available! {}", article.summarize());
 }
+
+/*
+cd ~/project/learnrust/ch10-02-traits/listing-10-14
+cargo run
+    Finished dev [unoptimized + debuginfo] target(s) in 0.04s
+     Running `target/debug/aggregator`
+New article available! (Read more...)
+ */
