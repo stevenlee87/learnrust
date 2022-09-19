@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "ch20-02-multithreaded"
+name = "hello"
 version = "0.1.0"
