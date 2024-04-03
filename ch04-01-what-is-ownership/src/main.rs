@@ -1,5 +1,6 @@
 // include!("ownership_move.rs");
 include!("stack_copy.rs");
+include!("ownership_funtion.rs");
 
 fn main() {
     let mut s = String::from("hello");
@@ -11,4 +12,6 @@ fn main() {
     // ownership_move();
 
     stack_copy();
+
+    ownership_function();
 }
