@@ -1,3 +1,5 @@
+include!("mutable_reference.rs");
+include!("dange.rs");
 /*
 示例 4-5 中的元组代码有这样一个问题：我们必须将 String 返回给调用函数，以便在调用 calculate_length
 后仍能使用 String，因为 String 被移动到了 calculate_length 内。相反我们可以提供一个 String 值的引用（reference）
@@ -11,6 +13,11 @@ fn main() {
     let len = calculate_length(&s1);
 
     println!("The length of '{}' is {}.", s1, len);
+
+    mutable_reference();
+
+    let reference_to_nothing = dangle();
+    println!("reference_to_nothing is {}", reference_to_nothing)
 }
 
 fn calculate_length(s: &String) -> usize {
