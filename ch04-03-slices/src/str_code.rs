@@ -1,3 +1,10 @@
+/*
+字符串 slice（string slice）是 String 中一部分值的引用，它看起来像这样：
+    let s = String::from("hello world");
+
+    let hello = &s[0..5];
+    let world = &s[6..11];
+ */
 fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
 
@@ -19,5 +26,4 @@ fn str_code() {
 
     let word = first_word(&my_string[..]);
     println!("The value of word2:{}", word);
-
 }
