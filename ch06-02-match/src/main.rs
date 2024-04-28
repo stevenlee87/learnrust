@@ -17,9 +17,26 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 
+fn value_in_cents2(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => {
+            println!("Lucky penny!");
+            1
+        }
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
+}
+
 fn main() {
     let value = value_in_cents(Penny);
     println!("value is {}", value);
+
+    value_in_cents2(Penny);
+
+    let value2 = value_in_cents2(Penny);
+    println!("value2 is {}", value2);
 }
 
 /*
